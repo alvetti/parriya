@@ -1,8 +1,6 @@
 import BrandWidget from './BrandWidget/BrandWidget';
 import CartWidget from './CartWidget/CartWidget';
-import NavbarMenu from './Navbar/Navbar';
-import Navbar from './Navbar/Navbar';
-import NavbarMobile from './Navbar/NavbarMobile';
+import NavbarWidget from './NavbarWidget/NavbarWidget';
 
 const Header = () => {
     return (
@@ -15,7 +13,7 @@ const Header = () => {
             </div>
             <div className='menu'>
                 <div className='container'>
-                    <NavbarMenu/>
+                    <NavbarWidget/>
                 </div>
             </div>
         </header>
