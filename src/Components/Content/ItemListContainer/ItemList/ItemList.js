@@ -1,10 +1,10 @@
-import ProductImage from '../../../assets/images/product.jpg';
+import ProductImage from '../../../../assets/images/product.jpg';
 
-const ItemListItem = ({title,price}) => {
+const ItemList = ({title,price}) => {
 
     return (
         <li className="products--item">
-            <img className="products-item__img" src={ProductImage}/>
+            <img className="products-item__img" src={ProductImage} alt="{title}"/>
             <div className="products--item__desc">
                 <h4>{title}</h4>
                 <div className="price">$ {price}</div>
@@ -12,4 +12,4 @@ const ItemListItem = ({title,price}) => {
         </li>
     );
 }
-export default ItemListItem;
+export default ItemList;
