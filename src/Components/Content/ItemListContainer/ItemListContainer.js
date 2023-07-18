@@ -1,24 +1,43 @@
-import ItemList from './ItemList/ItemList';
+import { useEffect, useState } from "react";
+import ItemList from "./ItemList";
+import HeroBanner from '../HeroBanner/HeroBanner';
 
-const ItemListContainer = () => {
+const ItemListContainer=()=>{
+    const[product, setProduct] = useState([]);
 
-    return (
-        <div className="item_list">
-            <div className="container">
-                <ul className="products">
-                    <ItemList  title='Product Title 1' price='1000,00'/>
-                    <ItemList  title='Product Title 2' price='200,00'/>
-                    <ItemList  title='Product Title 3' price='300,00'/>
-                    <ItemList  title='Product Title 4' price='800,00'/>
-                    <ItemList  title='Product Title 5' price='1200,00'/>
-                    <ItemList  title='Product Title 6' price='356,00'/>
-                    <ItemList  title='Product Title 7' price='234,00'/>
-                    <ItemList  title='Product Title 8' price='1890,00'/>
-                    <ItemList  title='Product Title 9' price='2340,00'/>
-                    <ItemList  title='Product Title 10' price='110,00'/>
-                </ul>
+    const getProducts = async()=>{
+        const response = await fetch('https://mocki.io/v1/5922d8bf-f411-44f0-bbd9-281557a5223d');
+        const data = await response.json();
+        setProduct(data);
+    }
+    useEffect(()=>{
+        getProducts();
+    }, []);
+
+    return(
+        <div className='content'>
+            <HeroBanner title='Parrilla Premium Ya' subtitle='Todo de especial para tu asado' readmoreText='Sepa mas' readmoreLink='#'/>
+            <div className="item_list">
+                <div className="container">
+                    <ul className="products">
+                        {product.map((p)=>{
+                            return(
+                                <ItemList
+                                key={p.id}
+                                id={p.id}
+                                type={p.type}
+                                name={p.name}
+                                price={p.price}
+                                quantity={p.quantity}
+                                img={p.photo}
+                                />
+                            )
+                        })}
+                    </ul>
+                </div>
             </div>
         </div>
-    );
+        
+    )
 }
 export default ItemListContainer;
