@@ -1,14 +1,30 @@
-import { Container } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Container } from 'react-bootstrap';
+import arrayProducts from '../../../Products/arrayProducts.json';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer=()=>{
+
+    const [item, setItem] = useState([]);
     const {id} = useParams();
+
+    useEffect(()=>{
+        const promesa = new Promise((resolve)=>{
+            setTimeout(()=>{
+                resolve(arrayProducts.find(item=> item.id === parseInt(id)))
+            }, 1000)
+        });
+        promesa.then((data)=>{
+            setItem(data)
+        });
+    }, [id]);
 
     return(
 
-        <div className='content mt-5 mb-5'>
+        <div className='product mt-5 mb-5'>
             <Container>
-                <h1>Item Id: {id}</h1>
+                <ItemDetail item={item}/>
             </Container>
         </div>
         

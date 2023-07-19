@@ -6,7 +6,7 @@
        "name": "Colita de Cuadril",
        "price": 505.00,
        "stock": 1,
-       "photo": "colita.jpg"
+       "image": "colita.jpg"
     },
     {
        "id": 2,
@@ -14,7 +14,7 @@
        "name": "Tapa de Asado",
        "price": 350.00,
        "stock": 0,
-       "photo": "tapa.jpg"
+       "image": "tapa.jpg"
     },
     {
        "id": 3,
@@ -22,7 +22,7 @@
        "name": "Vacío",
        "price": 450.00,
        "stock": 0,
-       "photo": "vacio.jpg"
+       "image": "vacio.jpg"
     },
     {
        "id": 4,
@@ -30,7 +30,7 @@
        "name": "Matambre",
        "price": 360.00,
        "stock": 0,
-       "photo": "matambre.jpg"
+       "image": "matambre.jpg"
     },
     {
        "id": 5,
@@ -38,7 +38,7 @@
        "name": "Entraña",
        "price": 750.00,
        "stock": 0,
-       "photo": "entrana.jpg"
+       "image": "entrana.jpg"
     },
     {
        "id": 6,
@@ -46,7 +46,7 @@
        "name": "Chorizo",
        "price": 250.00,
        "stock": 0,
-       "photo": "chorizo.jpg"
+       "image": "chorizo.jpg"
     },
     {
        "id": 7,
@@ -54,7 +54,7 @@
        "name": "Morcilla",
        "price": 200.00,
        "stock": 0,
-       "photo": "morcilla.jpg"
+       "image": "morcilla.jpg"
     },
     {
        "id": 8,
@@ -62,15 +62,15 @@
        "name": "Achuras",
        "price": 135.00,
        "stock": 0,
-       "photo": "achuras.jpg"
+       "image": "achuras.jpg"
     },
     {
        "id": 9,
        "category": "guarniciones",
        "name": "Pan",
-       "price": .00,
+       "price": 100.00,
        "stock": 0,
-       "photo": "pan.jpg"
+       "image": "pan.jpg"
     },
     {
        "id": 10,
@@ -78,7 +78,7 @@
        "name": "Ensalada",
        "price": 430.00,
        "stock": 0,
-       "photo": "ensalada.jpg"
+       "image": "ensalada.jpg"
     },
     {
        "id": 11,
@@ -86,7 +86,7 @@
        "name": "Papas",
        "price": 170.00,
        "stock": 0,
-       "photo": "papas.jpg"
+       "image": "papas.jpg"
     },
     {
        "id": 12,
@@ -94,118 +94,118 @@
        "name": "Salsa Criolla",
        "price": 200.00,
        "stock": 0,
-       "photo": "criolla.jpg"
+       "image": "criolla.jpg"
     },
     {
        "id": 13,
-       "category": "mas",
+       "category": "almacen",
        "name": "Carbón",
        "price": 1200.00,
        "stock": 0,
-       "photo": "carbon.jpg"
+       "image": "carbon.jpg"
     },
     {
        "id": 14,
-       "category": "mas",
+       "category": "almacen",
        "name": "Platos Descartables",
        "price": 50.00,
        "stock": 0,
-       "photo": "platos.jpg"
+       "image": "platos.jpg"
     },
     {
        "id": 15,
-       "category": "mas",
+       "category": "almacen",
        "name": "Vasos Descartables",
        "price": 50.00,
        "stock": 0,
-       "photo": "vasos.jpg"
+       "image": "vasos.jpg"
     },
     {
        "id": 16,
-       "category": "mas",
+       "category": "almacen",
        "name": "Servilletas",
        "price": 5.00,
        "stock": 0,
-       "photo": "servilletas.jpg"
+       "image": "servilletas.jpg"
     },
     {
        "id": 17,
-       "category": "mas",
+       "category": "almacen",
        "name": "Cubiertos Descartables",
        "price": 20.00,
        "stock": 0,
-       "photo": "cubiertos.jpg"
+       "image": "cubiertos.jpg"
     },
     {
        "id": 18,
-       "category": "mas",
+       "category": "almacen",
        "name": "Sal",
        "price": 175.00,
        "stock": 0,
-       "photo": "sal.jpg"
+       "image": "sal.jpg"
     },
     {
        "id": 19,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Cerveza",
        "price": 200.00,
        "stock": 0,
-       "photo": "cerveza.jpg"
+       "image": "cerveza.jpg"
     },
     {
        "id": 20,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Cerveza Artesanal",
        "price": 520.00,
        "stock": 0,
-       "photo": "artesanal.jpg"
+       "image": "artesanal.jpg"
     },
     {
        "id": 21,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Gaseosa",
        "price": 260.00,
        "stock": 0,
-       "photo": "gaseosa.jpg"
+       "image": "gaseosa.jpg"
     },
     {
        "id": 22,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Vodka",
        "price": 4800.00,
        "stock": 0,
-       "photo": "vodka.jpg"
+       "image": "vodka.jpg"
     },
     {
        "id": 23,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Água",
        "price": 380.00,
        "stock": 0,
-       "photo": "agua.jpg"
+       "image": "agua.jpg"
     },
     {
        "id": 24,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Fernet",
        "price": 4100.00,
        "stock": 0,
-       "photo": "fernet.jpg"
+       "image": "fernet.jpg"
     },
     {
        "id": 25,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Jugo",
        "price": 305.00,
        "stock": 0,
-       "photo": "jugo.jpg"
+       "image": "jugo.jpg"
     },
     {
        "id": 26,
-       "category": "bebida",
+       "category": "bebidas",
        "name": "Vino",
        "price": 1500.00,
        "stock": 0,
-       "photo": "vino.jpg"
+       "image": "vino.jpg"
     }
  ]

@@ -13,10 +13,10 @@ const NavbarWidget = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
 
-                            <Link to='/carnes'>Carnes</Link>
-                            <Link to='/guarnicion'>Guarnición</Link>
-                            <Link to='/almacen'>Almacén</Link>
-                            <Link to='/bebidas'>Bebidas</Link>
+                            <Link to='/category/carnes'>Carnes</Link>
+                            <Link to='/category/guarniciones'>Guarniciones</Link>
+                            <Link to='/category/almacen'>Almacén</Link>
+                            <Link to='/category/bebidas'>Bebidas</Link>
                             
                         </Nav>
                     </Navbar.Collapse>
