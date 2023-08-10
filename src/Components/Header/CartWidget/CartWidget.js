@@ -1,14 +1,15 @@
-import { useState } from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
 
 const CartWidget = () => {
 
-    const [quantity, setQuantity] = useState(0);
+        const {getQuantity} = useContext(CartContext);
 
     return (
         <div className="cart">
             <div className="cart--icon">
                 <i className="fa-solid fa-bag-shopping"></i>
-                <span className="cart--icon__counter">{quantity}</span>
+                <span className="cart--icon__counter">{getQuantity()}</span>
             </div>
             <div className="cart--value">
                 <p>Mi Carrito</p>

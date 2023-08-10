@@ -1,8 +1,8 @@
 import { Container } from 'react-bootstrap';
-import arrayProducts from '../../../Products/arrayProducts.json';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import {getFirestore, doc, getDoc} from 'firebase/firestore';
 
 const ItemDetailContainer=()=>{
 
@@ -10,14 +10,11 @@ const ItemDetailContainer=()=>{
     const {id} = useParams();
 
     useEffect(()=>{
-        const promesa = new Promise((resolve)=>{
-            setTimeout(()=>{
-                resolve(arrayProducts.find(item=> item.id === parseInt(id)))
-            }, 1000)
-        });
-        promesa.then((data)=>{
-            setItem(data)
-        });
+        const querydb = getFirestore();
+        const queryDoc = doc(querydb, 'products', id);
+        getDoc(queryDoc)
+        .then(res => setItem(({id: res.id, ...res.data()})))
+
     }, [id]);
 
     return(
