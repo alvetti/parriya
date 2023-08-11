@@ -1,3 +1,4 @@
+import { Cart } from '../Cart/Cart';
 import BrandWidget from './BrandWidget/BrandWidget';
 import CartWidget from './CartWidget/CartWidget';
 import NavbarWidget from './NavbarWidget/NavbarWidget';
@@ -15,6 +16,9 @@ const Header = () => {
                 <div className='container'>
                     <NavbarWidget/>
                 </div>
+            </div>
+            <div id='sidebar' className='sidebar'>
+                <Cart/>
             </div>
         </header>
     );

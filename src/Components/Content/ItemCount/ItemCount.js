@@ -17,7 +17,7 @@ const ItemCount=({stock, initial, onAdd})=>{
     }
 
     return(
-        <div>
+        <div className="buttons">
             <div className="button-wrapper">
                 <Button variant="primary" onClick={() => decrease()}>-</Button>
                 <span>{count}</span>

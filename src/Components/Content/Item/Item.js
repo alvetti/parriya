@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import ItemCount from "../ItemCount/ItemCount";
 import { useContext } from "react";
-import { CartContext } from "../../../context/CartContext";
+import { CartContext } from "../../../Context/CartContext";
+import ItemBuy from "../ItemBuy/ItemBuy";
 
 const Item=({item})=>{
 
@@ -32,8 +32,8 @@ const Item=({item})=>{
                 <Link to={`/item/${item.id}`}><h4>{item.name}</h4></Link>
                 <div className="price">$ {item.price}.00</div>
                 <div className="buttons">
-                    <ItemCount stock={item.stock} initial={1} onAdd={handleOnAdd}/>
-                    <Link to={`/item/${item.id}`}><Button variant="secondary"><i class="fa-regular fa-eye"></i> Ver</Button></Link>
+                    <ItemBuy stock={item.stock} initial={1} onAdd={handleOnAdd}/>
+                    <Link to={`/item/${item.id}`}><Button variant="secondary"><i className="fa-regular fa-eye"></i> Ver</Button></Link>
                 </div>
             </div>
         </div>

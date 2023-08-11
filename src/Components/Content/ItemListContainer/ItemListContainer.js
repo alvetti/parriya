@@ -3,7 +3,7 @@ import ItemList from "../ItemList/ItemList";
 import { Spinner } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import HeroBanner from '../HeroBanner/HeroBanner';
-import {getFirestore, collection, getDocs, query, where, orderBy} from 'firebase/firestore';
+import {getFirestore, collection, getDocs, query, where} from 'firebase/firestore';
 
 
 const ItemListContainer = () =>{
@@ -31,7 +31,8 @@ const ItemListContainer = () =>{
 
     return(
         <div className='content'>
-            <HeroBanner title='Parrilla Premium Ya' subtitle='Todo de especial para tu asado' readmoreText='Sepa mas' readmoreLink='#'/>
+            <HeroBanner title='Parrilla Premium Ya' subtitle='Todo de especial para tu asado'/>
+            
             <div className="item_list">
                 <div className="container">
                     {load ? <div className="loading"><Spinner /></div> : <ItemList item={item}/>}

@@ -1,18 +1,13 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
-import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
-export const Cart = () => {
+export const CartCheckout = () => {
 
-    const {cart, getTotal, clear, removeItem, openCart} = useContext(CartContext);
+    const {cart, getTotal, removeItem} = useContext(CartContext);
 
     return(
         <div className="cartpage">
-            <div className="cartpage--heading">
-                <h3>Carrito de Compras</h3>
-                <Button onClick={openCart}><i className="fa-solid fa-xmark"></i></Button>
-            </div>
                 {
                     cart.length === 0? <div className="emptycart">Carrito vacio</div>
                     :
@@ -35,8 +30,6 @@ export const Cart = () => {
                                 <span className="promo"><i className="fa-regular fa-credit-card"></i> 3 cuotas sin interés de $ { Number((getTotal() / 3).toFixed(2)) }</span>
                             </div>
                         </div>
-                        <Link onClick={openCart} to='/checkout' className="cartpage--checkout"><Button variant="primary">Finalizar Compra</Button></Link>
-                        <Button onClick={clear} className="cartpage--clear">Vaciar Carrito</Button>
                     </div>
                     
                 }

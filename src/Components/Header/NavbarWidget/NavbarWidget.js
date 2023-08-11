@@ -16,9 +16,7 @@ const NavbarWidget = () => {
                             <Link to='/category/carnes'>Carnes</Link>
                             <Link to='/category/guarniciones'>Guarniciones</Link>
                             <Link to='/category/almacen'>Almacén</Link>
-                            <Link to='/category/bebidas'>Bebidas</Link>
-                            <Link to='/checkout'>Checkout</Link>
-                            
+                            <Link to='/category/bebidas'>Bebidas</Link>                            
                             
                         </Nav>
                     </Navbar.Collapse>
