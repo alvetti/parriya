@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../../../Context/CartContext";
 import ItemBuy from "../ItemBuy/ItemBuy";
+import { CartContext } from "../../../Context/CartContext";
 
 const Item=({item})=>{
 
@@ -21,7 +21,7 @@ const Item=({item})=>{
     const {addItem} = useContext(CartContext);
 
     const handleOnAdd = (count) => {
-        
+
         addItem({id: item.id, price: item.price, name: item.name, image: item.image}, count);
     };
     
