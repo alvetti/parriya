@@ -21,6 +21,7 @@ const Item=({item})=>{
     const {addItem} = useContext(CartContext);
 
     const handleOnAdd = (count) => {
+        
         addItem({id: item.id, price: item.price, name: item.name, image: item.image}, count);
     };
     
