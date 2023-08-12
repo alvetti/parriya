@@ -29,7 +29,8 @@ export const Checkout = () => {
         const total = cart.reduce( (acum, unItem)=>acum+(unItem.price*unItem.quantity),0 );
         const dia = new Date();
         const data = {buyer, cart, total, dia};
-        generateOrder(data)
+        generateOrder(data);
+        clear();
     }
 
     const generateOrder = async (data) =>{
