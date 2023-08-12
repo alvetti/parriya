@@ -67,7 +67,7 @@ export const Checkout = () => {
                                 onChange={handleInputChange}
                                 required
                             />
-                            <input type="submit" value="Confirmar Compra" onClick={clear}/>
+                            <input type="submit" value="Confirmar Compra"/>
                         </form>
                         }
                         {orderId && <>
